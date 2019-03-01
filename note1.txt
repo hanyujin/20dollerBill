@@ -1,6 +1,69 @@
 원격 저장소 만들기
-git init
-vim 파일명
-git remote add url
-git remote 
-git remote -v
+
+
+git의 소스코드를 지역저장소로 가져오기
+git clone https://github.com/git/git.git
+
+로그를 거꾸로 출력하기
+git log --reverse
+
+git의 첫번째 커밋으로 체크아웃하기
+git checkout e83c5163316f89bfbde7d9ab23ca2e25604af290
+
+
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git remote
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git remote -v
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git remote add https://github.com/hanyujin/20dollerBill.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git remote add origin https://github.com/hanyujin/20dollerBill.git
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git remote
+origin
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git remote -v
+origin	https://github.com/hanyujin/20dollerBill.git (fetch)
+origin	https://github.com/hanyujin/20dollerBill.git (push)
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git status
+On branch master
+nothing to commit, working tree clean
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ ls -l
+total 8
+-rw-r--r--  1 yujinhan  staff  95  3  1 19:41 note1.txt
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ vim note1.txt
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git status
+On branch master
+nothing to commit, working tree clean
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git remote --help
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git remote -v
+origin	https://github.com/hanyujin/20dollerBill.git (fetch)
+origin	https://github.com/hanyujin/20dollerBill.git (push)
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git push -u origin master
+Username for 'https://github.com': yujinhan
+Password for 'https://yujinhan@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/hanyujin/20dollerBill.git/'
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git push -u origin master
+Username for 'https://github.com': YujinHan
+Password for 'https://Yujan@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/hanyujin/20dollerBill.git/'
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git push -u origin master
+Username for 'https://github.com': hanyujin
+Password for 'https://hanyujin@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hanyujin/20dollerBill.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ vim note1.txt
