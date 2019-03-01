@@ -1,0 +1,6 @@
+원격 저장소 만들기
+git init
+vim 파일명
+git remote add url
+git remote 
+git remote -v
