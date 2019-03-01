@@ -67,3 +67,46 @@ To https://github.com/hanyujin/20dollerBill.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ vim note1.txt
+
+
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ vim note1.txt
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git add note1.txt
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   note1.txt
+
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git commit -am "connect git remote"
+[master cfb2b16] connect git remote
+ Committer: yujin han <yujinhan@yujinui-MacBookPro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 69 insertions(+), 6 deletions(-)
+ rewrite note1.txt (71%)
+yujinui-MacBookPro:manage_git_20dollerBill yujinhan$ git log
+commit cfb2b166139ad60df7026ececae324d17252fbe5 (HEAD -> master)
+Author: yujin han <yujinhan@yujinui-MacBookPro.local>
+Date:   Fri Mar 1 20:01:51 2019 +0900
+
+    connect git remote
+
+commit d07d2d7e7520999d971ac60bb888065b835e5c5b (origin/master)
+Author: yujin han <yujinhan@yujinui-MacBookPro.local>
+Date:   Fri Mar 1 19:42:23 2019 +0900
+
+    git test remote
+

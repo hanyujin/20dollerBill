@@ -1,1 +1,6 @@
-git branch 
+if you start to write documents
+you should pull command
+
+$git pull
+
+ 
