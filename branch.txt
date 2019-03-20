@@ -1,6 +1,10 @@
 if you start to write documents
 you should pull command
 
-$git pull
+$ git pull
+
+and then write or modify files 
+
+
 
  
