@@ -18,9 +18,9 @@ public class Chapter {
 }
 
 /*
- * 롬복 @Data 어노테이션은 접근자 설정자 toString() method, equals() method , hashCode() method 
- * final 필드에 대한 생성자 생성
- * 
  * @Document 어노테이션은 이 클래스를 몽고db데이터 저장소에 저장하기에 적합한 것으로 지정한다.
  * 
+ * 롬복 
+ * @Data 어노테이션은 접근자 설정자 toString() method, equals() method , hashCode() method 
+ * final 필드에 대한 생성자 생성
  */
